@@ -2,6 +2,20 @@ import { client } from './index.js'
 import { ObjectId } from 'mongodb'
 
 //Utility functions
+async function getAllMentors() {
+	const result = await client.db('myDB').collection('mentor').find({}).toArray()
+	return result
+}
+
+async function getAllStudents() {
+	const result = await client
+		.db('myDB')
+		.collection('student')
+		.find({})
+		.toArray()
+	return result
+}
+
 async function getUnassignedStudents() {
 	const result = await client
 		.db('myDB')
@@ -96,4 +110,6 @@ export {
 	assignMentor,
 	getStudentByMentorId,
 	getUnassignedStudents,
+	getAllStudents,
+	getAllMentors,
 }
