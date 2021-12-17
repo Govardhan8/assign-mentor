@@ -16,8 +16,8 @@ router.route('/add-mentor').post(async (request, response) => {
 })
 
 router.route('/add-student').post(async (request, response) => {
-	const { mentor, student } = request.body
-	const result = await addStudent(mentor, student)
+	const body = request.body
+	const result = await addStudent(body)
 	response.send(result)
 })
 
