@@ -56,7 +56,7 @@
 **sample request:**
 
 {
-"name":"Portas D Ace",
+"name":student name,
 }
 
 **To assign mentor to student/s:**
