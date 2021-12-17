@@ -3,7 +3,15 @@ import { ObjectId } from 'mongodb'
 
 //Utility functions
 
-//For Transactions route
+async function getUnassignedStudents() {
+	const result = await client
+		.db('myDB')
+		.collection('student')
+		.find({ mentorID: null })
+		.toArray()
+	return result
+}
+
 async function addMentor(body) {
 	return await client.db('myDB').collection('mentor').insertOne(body)
 }
@@ -57,4 +65,10 @@ async function getStudentByMentorId(id) {
 	return result
 }
 
-export { addMentor, addStudent, assignMentor, getStudentByMentorId }
+export {
+	addMentor,
+	addStudent,
+	assignMentor,
+	getStudentByMentorId,
+	getUnassignedStudents,
+}
