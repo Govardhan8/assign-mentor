@@ -1,71 +1,71 @@
-To install node modules: npm install
+**To install node modules:** npm install
 
-To run on local: npm run dev
+**To run on local:** npm run dev
 
-PRODUCTION URL: https://mentor-g.herokuapp.com
+**PRODUCTION URL:** https://mentor-g.herokuapp.com
 
-GITHUB URL: https://github.com/Govardhan8/assign-mentor
+**GITHUB URL:** https://github.com/Govardhan8/assign-mentor
 
-End Points:
+**_End Points:_**
 
-To check if Class api is up: https://mentor-g.herokuapp.com/class
+**To check if Class api is up:** https://mentor-g.herokuapp.com/class
 
-To get all students:
+**To get all students:**
 
-url: https://mentor-g.herokuapp.com/class/students
+**url:** https://mentor-g.herokuapp.com/class/students
 
-method: get
+**method:** get
 
-To get all mentors:
+**To get all mentors:**
 
-url: https://mentor-g.herokuapp.com/class/mentors
+**url:** https://mentor-g.herokuapp.com/class/mentors
 
-method: get
+**method:** get
 
-To get students by mentor id:
+**To get students by mentor id:**
 
-url: https://mentor-g.herokuapp.com/class/get-students/:id
+**url:** https://mentor-g.herokuapp.com/class/get-students/:id
 
-method: get
+**method:** get
 
-To get all unassigned students:
+**To get all unassigned students:**
 
-url: https://mentor-g.herokuapp.com/class/unassigned-students
+**url:** https://mentor-g.herokuapp.com/class/unassigned-students
 
-method: get
+**method:** get
 
-To add a new mentor:
+**To add a new mentor:**
 
-url: https://mentor-g.herokuapp.com/class/add-mentor
+**url:** https://mentor-g.herokuapp.com/class/add-mentor
 
-method: post
+**method:** post
 
-sample request:
+**sample request:**
 
 {
 "name":mentor-name,
 "topic":Topic-name,  
 }
 
-To add a new student:
+**To add a new student:**
 
-url: https://mentor-g.herokuapp.com/class/add-student
+**url:** https://mentor-g.herokuapp.com/class/add-student
 
-method: post
+**method:** post
 
-sample request:
+**sample request:**
 
 {
 "name":"Portas D Ace",
 }
 
-To assign mentor to student/s:
+**To assign mentor to student/s:**
 
-url: https://mentor-g.herokuapp.com/class/assign-mentor
+**url:** https://mentor-g.herokuapp.com/class/assign-mentor
 
-method: put
+**method:** put
 
-sample request:
+**sample request:**
 
 {
 "mentor":mentor-id,
