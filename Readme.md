@@ -1,4 +1,4 @@
-#To install node modules: npm install
+**To install node modules:** npm install
 
 **To run on local:** npm run dev
 
